@@ -9,9 +9,8 @@ i = 0
 while i < m:
     a.append(input("Введите значение: "))
     i+=1
-# for el in range(1,len(a),2):
-    # a[el-1], a[el] = a[el], a[el-1]
-    a[1::2], a[::2]= a[::2], a[1::2]
+for el in range(1,len(a),2):
+    a[el-1], a[el] = a[el], a[el-1]
 print(a)
 
 
